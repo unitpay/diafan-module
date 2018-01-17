@@ -147,7 +147,6 @@ function getSignature($method, array $params, $secretKey)
 
 function verifySignature($params, $method)
 {
-
 	$id = $params['account'];
 	$pay = DB::query_fetch_array("SELECT * FROM {payment_history} WHERE id=%d LIMIT 1", $id);
 	if (! $pay)
@@ -161,7 +160,6 @@ function verifySignature($params, $method)
 		return false;
 	}
 	$pay["params"] = unserialize($pay["payment"]["params"]);
-
 	$secret = $pay["params"]["unitpay_secret_key"];
 	return $params['signature'] == getSignature($method, $params, $secret);
 }

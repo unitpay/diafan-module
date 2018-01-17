@@ -22,11 +22,11 @@ class Payment_unitpay_admin
 			"params" => array(
 				'unitpay_public_key' => array(
 					'name'	=>	'PUBLIC KEY',
-					'help'	=>	'Возмите PUBLIC KEY в личном кабинете Unitpay.ru'
+					'help'	=>	'Возьмите PUBLIC KEY в личном кабинете Unitpay.ru'
 				),
 				'unitpay_secret_key' =>  array(
 					'name'	=>	'SECRET KEY',
-					'help'	=>	'Возмите SECRET KEY в личном кабинете Unitpay.ru'
+					'help'	=>	'Возьмите SECRET KEY в личном кабинете Unitpay.ru'
 				)
 			)
 		);
