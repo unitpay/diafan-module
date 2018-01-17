@@ -27,7 +27,12 @@ class Payment_unitpay_admin
 				'unitpay_secret_key' =>  array(
 					'name'	=>	'SECRET KEY',
 					'help'	=>	'Возьмите SECRET KEY в личном кабинете Unitpay.ru'
-				)
+				),
+                'unitpay_send_cash_items' => array(
+                    'name' => 'Передавать позиции заказа',
+                    'type' => 'checkbox',
+                    'help' => 'Если опция включена, то в чеке будут присутствовать позиции заказа (для ФЗ-54)'
+                )
 			)
 		);
 	}
