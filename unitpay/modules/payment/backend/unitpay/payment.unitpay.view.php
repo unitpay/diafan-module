@@ -17,9 +17,9 @@ if (! defined('DIAFAN'))
 		<input type="hidden" name="account" value="<?php echo $result["account"]; ?>">
 		<input type="hidden" name="sum" value=" <?php echo $result["sum"]; ?>">
 		<input type="hidden" name="desc" value="<?php echo $result["desc"]; ?>">
-        <input type="hidden" name="customerEmail" value="<?php echo $result['customerEmail']; ?>">
-        <?php if ($result['showCashItems']): ?>
-        <input type="hidden" name="cashItems" value="<?php echo $result['cashItems']; ?>">
-        <?php endif ?>
+		<input type="hidden" name="customerEmail" value="<?php echo $result['customerEmail']; ?>">
+		<?php if ($result['showCashItems']): ?>
+		<input type="hidden" name="cashItems" value="<?php echo $result['cashItems']; ?>">
+		<?php endif ?>
 		<p><input type="submit" value="<?php echo $this->diafan->_('Оплатить', false);?>"></p>
 	</form>

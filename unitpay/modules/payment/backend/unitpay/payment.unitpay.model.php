@@ -27,17 +27,17 @@ class Payment_unitpay_model extends Diafan
 		return $result;
 	}
 
-    private function getCashItems($pay)
-    {
-        return base64_encode(json_encode(
-            array_map(function ($item) {
-                return array(
-                    'name' => $item['name'],
-                    'count' => $item['count'],
-                    'price' => $item['price']
-                );
-            }, $pay['details']['goods'])
-        ));
-    }
+	private function getCashItems($pay)
+	{
+		return base64_encode(json_encode(
+			array_map(function ($item) {
+				return array(
+					'name' => $item['name'],
+					'count' => $item['count'],
+					'price' => $item['price']
+				);
+			}, $pay['details']['goods'])
+		));
+	}
 }
 
