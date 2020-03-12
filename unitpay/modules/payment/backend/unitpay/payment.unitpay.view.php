@@ -13,7 +13,7 @@ if (! defined('DIAFAN'))
 
 	echo $result["text"];
 	?>
-	<form name="unitpay" action="https://unitpay.ru/pay/<?php echo $result["public_key"]; ?>">
+	<form name="unitpay" action="https://<?php echo $result["domain"]; ?>/pay/<?php echo $result["public_key"]; ?>">
 		<input type="hidden" name="account" value="<?php echo $result["account"]; ?>">
 		<input type="hidden" name="sum" value=" <?php echo $result["sum"]; ?>">
 		<input type="hidden" name="desc" value="<?php echo $result["desc"]; ?>">

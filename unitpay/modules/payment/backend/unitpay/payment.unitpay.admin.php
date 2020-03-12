@@ -20,13 +20,17 @@ class Payment_unitpay_admin
 		$this->config = array(
 			"name" => 'Unitpay',
 			"params" => array(
+                'unitpay_domain' => array(
+                    'name'	=>	'DOMAIN',
+                    'help'	=>	'Ваш рабочий домен'
+                ),
 				'unitpay_public_key' => array(
 					'name'	=>	'PUBLIC KEY',
-					'help'	=>	'Возьмите PUBLIC KEY в личном кабинете Unitpay.ru'
+					'help'	=>	'Возьмите PUBLIC KEY в личном кабинете Unitpay'
 				),
 				'unitpay_secret_key' =>  array(
 					'name'	=>	'SECRET KEY',
-					'help'	=>	'Возьмите SECRET KEY в личном кабинете Unitpay.ru'
+					'help'	=>	'Возьмите SECRET KEY в личном кабинете Unitpay'
 				),
 				'unitpay_send_cash_items' => array(
 					'name' => 'Передавать позиции заказа',
