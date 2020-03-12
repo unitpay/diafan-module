@@ -20,6 +20,7 @@ class Payment_unitpay_model extends Diafan
 		$result["sum"]			= $pay['summ'];
 		$result["desc"]			= $pay['desc'];
 		$result["account"]		= $pay['id'];
+        $result["domain"]	    = $params["unitpay_domain"];
 		$result["public_key"]	= $params["unitpay_public_key"];
 		$result['customerEmail'] = $pay['details']['email'];
 		$result['cashItems'] = $this->getCashItems($pay);
