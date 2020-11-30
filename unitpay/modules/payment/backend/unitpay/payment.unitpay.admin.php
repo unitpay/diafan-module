@@ -36,6 +36,10 @@ class Payment_unitpay_admin
 					'name' => 'Передавать позиции заказа',
 					'type' => 'checkbox',
 					'help' => 'Если опция включена, то в чеке будут присутствовать позиции заказа (для ФЗ-54)'
+				),
+				'unitpay_vat_code' => array(
+					'name' => 'НДС',
+					'help' => 'none, vat0, vat10, vat20'
 				)
 			)
 		);
